@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة المكتبة</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0055a5;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: #e0e0e0; /* تغيير لون الخلفية */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px; /* تعديل الارتفاع */
+            border: 2px solid #0055a5; /* إضافة حدود حول الـ iframe */
+            padding: 20px; /* إضافة الحشوة */
+        }
+        .hero iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .main-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .main-buttons button {
+            background-color: #0055a5;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .main-buttons button:hover {
+            background-color: #003366;
+        }
+        .content {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #003366;
+            color: white;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>نظام إدارة المكتبة</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">الكتب</a>
+        <a href="#">الأعضاء</a>
+        <a href="#">الإعارة</a>
+        <a href="https://openai.com/index/gpt-4/">GPT-4</a>
+    </nav>
+
+    <!-- Hero Section with Embedded Site -->
+    <div class="hero">
+        <iframe src="https://xlserver.al-emtiaz.net/XLWeb/default.aspx" width="100%" height="100%" title="نظام إدارة المكتبة"></iframe>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-buttons">
+        <button>عرض الكتب</button>
+        <button>إدارة الأعضاء</button>
+        <button>إعارة كتاب</button>
+    </div>
+
+    <!-- Books Section -->
+    <div class="content">
+        <h3>قائمة الكتب</h3>
+        <table>
+            <tr>
+                <th>صورة الكتاب</th>
+                <th>اسم الكتاب</th>
+                <th>المؤلف</th>
+                <th>النوع</th>
+                <th>سنة النشر</th>
+                <th>عدد النسخ المتاحة</th>
+            </tr>
+            <tr>
+                <td><img src="book1.jpg" alt="صورة الكتاب" width="50"></td>
+                <td>كتاب 1</td>
+                <td>المؤلف 1</td>
+                <td>الرواية</td>
+                <td>2020</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><img src="book2.jpg" alt="صورة الكتاب" width="50"></td>
+                <td>كتاب 2</td>
+                <td>المؤلف 2</td>
+                <td>التكنولوجيا</td>
+                <td>2018</td>
+                <td>3</td>
+            </tr>
+            <!-- أضف المزيد من الكتب هنا -->
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>جميع الحقوق محفوظة لدى جابر © 2024 نظام إدارة المكتبة</p>
+        <p><a href="#">اتصل بنا</a></p>
+    </footer>
+
+</body>
+</html>
